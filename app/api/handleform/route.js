@@ -11,7 +11,7 @@ export async function GET() {
 }
 
 export async function POST(req, res) {
-    // const data = await req.json();
+    const data = await req.json();
 
     const html = data.html;
 
