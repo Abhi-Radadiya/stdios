@@ -130,6 +130,7 @@ const SlopedRectangle = () => {
                     "content-type": "application/json",
                 },
             });
+
             if (response.ok) {
                 const blob = await response.blob();
 
@@ -147,6 +148,7 @@ const SlopedRectangle = () => {
             } else {
                 console.log("Failed to fetch PDF:", response);
             }
+            console.log(response);
         } catch (error) {
             console.log(error);
         }

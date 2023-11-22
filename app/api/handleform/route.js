@@ -27,7 +27,7 @@ export async function POST(req, res) {
 
     await page.waitForTimeout(1000);
 
-    const width = 336; // Set to your desired width
+    const width = 336;
     const height = 220;
 
     const pdfBuffer = await page.pdf({
@@ -57,7 +57,7 @@ export async function POST(req, res) {
 
     console.log("resX==>", resX, "req==>", req, "pdfBuffer==>0", pdfBuffer);
 
-    return resX;
+    // return resX;
 
-    // return NextResponse.json(data);
+    return NextResponse.json(data);
 }
