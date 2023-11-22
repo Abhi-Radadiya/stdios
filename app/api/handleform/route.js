@@ -11,7 +11,7 @@ export async function GET() {
 }
 
 export async function POST(req, res) {
-    const data = await req.json();
+    // const data = await req.json();
 
     const html = data.html;
 
@@ -60,5 +60,10 @@ export async function POST(req, res) {
     // return resX;
 
     // return NextResponse.json(data);
+    const data = {
+        name: "Bishal Shrestha",
+        age: "27",
+    };
+
     return NextResponse.json({ data });
 }
