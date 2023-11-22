@@ -120,7 +120,7 @@ const SlopedRectangle = () => {
              <body>${divRef.current.outerHTML}</body>
          </html>
         `;
-        console.log("html==>", html);
+        console.log("html==>", JSON.stringify({ html: html }));
 
         try {
             const response = await fetch("/api/handleform", {

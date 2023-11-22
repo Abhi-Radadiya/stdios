@@ -59,5 +59,6 @@ export async function POST(req, res) {
 
     // return resX;
 
-    return NextResponse.json(data);
+    // return NextResponse.json(data);
+    return NextResponse.json({ data });
 }
