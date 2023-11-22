@@ -123,7 +123,7 @@ const SlopedRectangle = () => {
         console.log("html==>", html);
 
         try {
-            const response = await fetch("http://localhost:3000/api/handleform", {
+            const response = await fetch("https://stdios.vercel.app/api/handleform", {
                 method: "POST",
                 body: JSON.stringify({ html: html }),
                 headers: {
