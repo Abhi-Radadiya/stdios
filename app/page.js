@@ -145,7 +145,7 @@ const SlopedRectangle = () => {
                 // Remove the link from the DOM
                 document.body.removeChild(link);
             } else {
-                console.error("Failed to fetch PDF:", response.statusText);
+                console.log("Failed to fetch PDF:", response);
             }
         } catch (error) {
             console.log(error);

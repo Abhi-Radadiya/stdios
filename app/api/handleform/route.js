@@ -55,6 +55,8 @@ export async function POST(req, res) {
         }),
     });
 
+    console.log("resX==>", resX, "req==>", req, "pdfBuffer==>0", pdfBuffer);
+
     return resX;
 
     // return NextResponse.json(data);
